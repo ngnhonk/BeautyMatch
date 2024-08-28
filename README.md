@@ -6,7 +6,8 @@
 3. Nguyễn Việt Hùng - 22010323
 4. Phạm Quang Khải - 22010028
 
-# Ý tưởng cho dự án phần mềm đề xuất giải pháp làm đẹp: Ứng dụng 'BeautyMatch': Phần mềm đề xuất giải pháp làm đẹp cá nhân hóa
+# Ý tưởng cho dự án phần mềm đề xuất giải pháp làm đẹp:
+Ứng dụng 'BeautyMatch': Phần mềm đề xuất giải pháp làm đẹp cá nhân hóa
 Mô tả dự án:
 BeautyMatch là một ứng dụng đề xuất các giải pháp làm đẹp cá nhân hóa dựa trên đặc điểm khuôn mặt, loại da, sở thích cá nhân, và mục tiêu làm đẹp của người dùng. Ứng dụng này không chỉ đưa ra các gợi ý về sản phẩm chăm sóc da, trang điểm, mà còn bao gồm cả lời khuyên về chế độ ăn uống, thói quen sinh hoạt để tối ưu hóa kết quả làm đẹp.
 Tính năng chính:
