@@ -22,7 +22,7 @@
         <mxCell id="Yxggnad04uX287QkhcIc-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="zjo078G5RI25TfbY9cQv-45" target="Yxggnad04uX287QkhcIc-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="zjo078G5RI25TfbY9cQv-45" value="Chức năng" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="zjo078G5RI25TfbY9cQv-45" value="Chức năng" style="rounded=1;whiteSpace=wrap;html=1;shape=ellipse;perimeter=ellipsePerimeter;" parent="1" vertex="1">
           <mxGeometry x="120" y="290" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="zjo078G5RI25TfbY9cQv-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="zjo078G5RI25TfbY9cQv-57" target="zjo078G5RI25TfbY9cQv-45" edge="1">
