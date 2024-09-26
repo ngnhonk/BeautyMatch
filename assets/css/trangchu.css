@@ -1,6 +1,6 @@
 /* Header */
 
-header {
+/* header {
     background-color: var(--color-background-one);
     position: fixed;
     top: 0;
@@ -9,6 +9,22 @@ header {
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
     z-index: 100;
     background-color: #EFEFEF;
+} */
+
+header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    
+    z-index: 100;
+    transition: background-color 0.6s ease;
+}
+
+header.scrolled {
+    background-color: #EFEFEF;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
 }
 
 header .inner-header {
@@ -89,7 +105,7 @@ header .head-right p:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/assets/images/br-1.jpg");
+    background-image: url("/assets/images/background.jpg");
     background-size: cover;
     background-position: center;
     opacity: 0.4;
@@ -144,7 +160,7 @@ header .head-right p:hover {
     color: #53affa;
 }
 
-.section-one .button{
+.section-one .button {
     padding: 13px 26px;
     background-color: #ff9fd4;
     border: 1px solid #ff9fd4;
@@ -155,9 +171,71 @@ header .head-right p:hover {
     color: #2C3E50;
 }
 
-.section-one .button:hover{
-    background-color: #F4F1E9;
+.section-one .button:hover {
+    background-color: #EFF2F1;
     border: 1px solid gray;
     transition: 0.3s;
 }
+
 /* End Section One */
+
+/* Section Two */
+.section-two{
+    background-color: var(--color-primary);
+}
+.section-two .inner-content {
+    padding: 6rem 0;
+    padding-bottom: 9rem;
+}
+
+.section-two h2 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.section-two .inner-content .item {
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-two .inner-content .item h4 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 1px;
+}
+
+.section-two .inner-content .item p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.section-two .inner-content .item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.section-two .inner-content .item ul {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.section-two .inner-content .item ul li {
+    padding: 0.7rem 1rem;
+    border-radius: 8px 8px 0 0;
+    background-color: var(--color-primary);
+}
+
+/* End Section Two */

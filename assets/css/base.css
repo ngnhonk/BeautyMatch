@@ -2,6 +2,7 @@
     /* font-family: "Playwrite DE Grund", cursive; */
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
+    box-sizing: border-box;
 }
 
 a {
@@ -14,8 +15,9 @@ ul li {
 }
 
 :root {
-    --color-main: #F7D9C4;
-    --color-primary: #FEFEFE;
+    --color-main: #FFE4E3;
+    --color-primary: #EFEFEF;
     --color-text: #808080;
     --color-text-prim: lightcoral;
+    --color-white: #FEFEFE;
 }
