@@ -271,6 +271,7 @@ header .inner-header .menu {
     background-color: var(--color-primary);
 }
 
+<<<<<<< HEAD
 
 .section-two .more-info {
     text-align: center;
@@ -335,3 +336,9 @@ footer .row .contact i{
     font-size: 1.5rem;
 }
 /* End Footer */
+=======
+/* End Section Two */
+
+/* Section Three */
+/* End Section Three */
+>>>>>>> 682f122e8a77e9237830d5ccf1b5443e669bd206
