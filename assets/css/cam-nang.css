@@ -1,0 +1,149 @@
+/* Header */
+header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 1000;
+    transition: background-color 0.6s ease;
+}
+
+header.scrolled {
+    background-color: #EFEFEF;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
+}
+
+header .inner-header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+header .inner-header a {
+    text-decoration: none;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header .head-left img {
+    padding: 27.5px 0px;
+}
+
+header .head-mid ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header .head-mid ul li:hover {
+    background-color: var(--color-main);
+    transition: 0.5s;
+}
+
+header .head-mid ul li {
+    padding: 30px 40px;
+    font-size: 20px;
+    color: black;
+}
+
+header .head-right {
+    display: flex;
+    align-items: center;
+}
+
+header .head-right p {
+    margin: 0;
+    font-size: 20px;
+    color: var(--color-text);
+    justify-content: center;
+}
+
+header .head-right p:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+header .inner-header .hMenu {
+    display: none;
+    top: 100%;
+    width: 100%;
+    margin: auto;
+    z-index: 1000;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-white-hover);
+    border-radius: 8px;
+    position: absolute;
+    text-align: center;
+}
+
+header .inner-header .hMenu ul {
+    padding: 0;
+}
+
+header .inner-header .hMenu ul li {
+    padding: 1rem 0;
+    border-top: 1px solid lightgray;
+    margin: 0 40px;
+}
+
+header .inner-header .menu {
+    font-weight: 700;
+    font-size: 30px;
+    padding: 27.5px 0.5rem;
+    display: none;
+}
+
+@media (max-width : 1199.98px) {
+    header .inner-header .head-mid {
+        display: none;
+    }
+
+    header .inner-header .head-right {
+        display: none;
+    }
+
+    header .inner-header .menu {
+        display: block;
+    }
+}
+
+@media (max-width : 991.98px) {}
+
+/* End Header */
+
+
+
+/* Footer */
+footer{
+    padding: 3rem 0rem;
+    background-color: #2C3E50;
+}
+footer h3{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: white;
+}
+footer .row{
+    border-top: 1px solid white;   
+    padding: 1rem 0;
+    color: white; 
+    font-size: 1rem;
+}
+footer .row h4{
+    font-size: 1rem;
+    font-weight: 700;
+}
+footer .row .contact{
+    display: flex;
+    flex-direction: row;
+}
+footer .row .contact i{
+    padding-right: 0.8rem;
+    font-size: 1.5rem;
+}
+/* End Footer */

@@ -1,11 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Beauty</title>
+
+    <!-- Link bootstrap and js -->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css">
+    <script src="/assets/bootstrap/jquery.slim.min.js"></script>
+    <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+
+    <!-- Link file css -->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/cham-soc-da.css">
+
+    <!-- Link Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+DE+Grund:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <!-- Other component -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
-    
+    <header>
+        <div class="inner-header">
+            <div class="head-left">
+                <a href="#"><img src="/assets/images/logo1.png"></a>
+            </div>
+
+            <div class="head-mid">
+                <ul>
+                    <a href="/">
+                        <li>Trang chủ</li>
+                    </a>
+                    <a href="/cham-soc-da/">
+                        <li>Chăm sóc da</li>
+                    </a>
+                    <a href="/san-pham/">
+                        <li>Sản phẩm</li>
+                    </a>
+                    <a href="/tu-van/">
+                        <li>Tư vấn</li>
+                    </a>
+                    <a href="/cam-nang/">
+                        <li>Cẩm nang</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="head-right">
+                <a href="">
+                    <p>Tài khoản</p>
+                </a>
+            </div>
+
+            <div id="menu" class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="hMenu" class="hMenu">
+                <ul>
+                    <a href="/">
+                        <li>Trang chủ</li>
+                    </a>
+                    <a href="/cham-soc-da/">
+                        <li>Chăm sóc da</li>
+                    </a>
+                    <a href="/san-pham/">
+                        <li>Sản phẩm</li>
+                    </a>
+                    <a href="/tu-van/">
+                        <li>Tư vấn</li>
+                    </a>
+                    <a href="/cam-nang/">
+                        <li>Cẩm nang</li>
+                    </a>
+                    <a href="">
+                        <li>Tài khoản</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <script>
+            document.getElementById('menu').addEventListener('click', function () {
+                var hMenu = document.getElementById('hMenu');
+                event.stopPropagation();
+                if (hMenu.style.display === 'block') {
+                    hMenu.style.display = 'none';
+                    var menuDiv = document.getElementById('menu');
+                    menuDiv.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                } else {
+                    hMenu.style.display = 'block';
+                    var menuDiv = document.getElementById('menu');
+                    menuDiv.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+                }
+            });
+        </script>
+    </header>
+
+
+    <main>
+        
+    </main>
+
+    <footer>
+        <div class="inner-content">
+            <div class="container-md">
+                <h3>TỔ CHỨC SỨC KHOẺ & LÀM ĐẸP VIỆT NAM</h3>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <h4>THÔNG TIN LIÊN HỆ</h4>
+                        <p> <i class="fa-solid fa-location-dot"></i> Trụ sở Hà Nội: Yên Nghĩa, Hà Đông, Hà Nội</p>
+                        <p><i class="fa-solid fa-phone"></i> Hotline: 02499998888</p>
+                        <p><i class="fa-solid fa-envelope"></i> Email: beauty.work@beauty.com</p>
+                        <h4>THEO DÕI CHÚNG TÔI</h4>
+                        <div class="contact">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <h4>CƠ SỞ 1</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Trụ sở Hà Nội: Số XX, Yên Nghĩa, Hà Đông, Hà Nội</p>
+                        <p><i class="fa-solid fa-phone"></i> Hotline: 02499998888</p>
+                        <h4>CƠ SỞ 2</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Trụ sở Hà Nội: Số XX, Đường XX, Quận X, TP.HCM</p>
+                        <p><i class="fa-solid fa-phone"></i> Hotline: 02488889999</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

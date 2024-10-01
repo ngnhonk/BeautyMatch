@@ -271,8 +271,6 @@ header .inner-header .menu {
     background-color: var(--color-primary);
 }
 
-<<<<<<< HEAD
-
 .section-two .more-info {
     text-align: center;
 }
@@ -304,41 +302,97 @@ header .inner-header .menu {
 /* End Section Two */
 
 /* Section Three */
+.section-three {
+    background-color: var(--color-br-dark);
+    padding: 9rem;
+}
 
+.section-three .inner-content {
+    background-color: var(--color-primary);
+    padding: 3rem;
+    border-radius: 0.8rem;
+}
+.section-three .inner-content .left p{
+    font-size: 1.2rem;
+}
+.section-three .inner-content .left h2{
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+.section-three .inner-content .problems {
+    padding: 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid lightslategray;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-three .inner-content .problems:hover{
+    background-color:var(--color-dark);
+    color: var(--color-main);
+    transition: 0.6s;
+}
+.section-three .inner-content .problems i{
+    font-size: 1.5rem;
+}
+.section-three .inner-content .problems p{
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
 /* End Section Three */
 
+/* Section Four */
+.section-four{
+    background-color: var(--color-primary);
+}
+.section-four .inner-content{
+    padding: 10rem 0;
+}
+.section-four .inner-content img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 30%;
+    border-radius: 2rem;
+}
+/* End Section Four */
+
 /* Footer */
-footer{
+footer {
     padding: 3rem 0rem;
     background-color: #2C3E50;
 }
-footer h3{
+
+footer h3 {
     font-size: 1.2rem;
     font-weight: 800;
     color: white;
 }
-footer .row{
-    border-top: 1px solid white;   
+
+footer .row {
+    border-top: 1px solid white;
     padding: 1rem 0;
-    color: white; 
+    color: white;
     font-size: 1rem;
 }
-footer .row h4{
+
+footer .row h4 {
     font-size: 1rem;
     font-weight: 700;
 }
-footer .row .contact{
+
+footer .row .contact {
     display: flex;
     flex-direction: row;
 }
-footer .row .contact i{
+
+footer .row .contact i {
     padding-right: 0.8rem;
     font-size: 1.5rem;
 }
-/* End Footer */
-=======
-/* End Section Two */
 
-/* Section Three */
-/* End Section Three */
->>>>>>> 682f122e8a77e9237830d5ccf1b5443e669bd206
+/* End Footer */
