@@ -6,3 +6,12 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
+
+document.getElementById('menu').addEventListener('click', function () {
+    var hMenu = document.getElementById('hMenu');
+    if (hMenu.style.display === 'block') {
+        hMenu.style.display = 'none';
+    } else {
+        hMenu.style.display = 'block';
+    }
+});

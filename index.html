@@ -56,6 +56,9 @@
                     <a href="">
                         <li>Tư vấn</li>
                     </a>
+                    <a href="">
+                        <li>Cẩm nang</li>
+                    </a>
                 </ul>
             </div>
 
@@ -64,7 +67,49 @@
                     <p>Tài khoản</p>
                 </a>
             </div>
+
+            <div id="menu" class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="hMenu" class="hMenu">
+                <ul>
+                    <a href="">
+                        <li>Trang chủ</li>
+                    </a>
+                    <a href="">
+                        <li>Chăm sóc da</li>
+                    </a>
+                    <a href="">
+                        <li>Sản phẩm</li>
+                    </a>
+                    <a href="">
+                        <li>Tư vấn</li>
+                    </a>
+                    <a href="">
+                        <li>Cẩm nang</li>
+                    </a>
+                    <a href="">
+                        <li>Tài khoản</li>
+                    </a>
+                </ul>
+            </div>
         </div>
+        <script>
+            document.getElementById('menu').addEventListener('click', function () {
+                var hMenu = document.getElementById('hMenu');
+                event.stopPropagation();
+                if (hMenu.style.display === 'block') {
+                    hMenu.style.display = 'none';
+                    var menuDiv = document.getElementById('menu');
+                    menuDiv.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                } else {
+                    hMenu.style.display = 'block';
+                    var menuDiv = document.getElementById('menu');
+                    menuDiv.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+                }
+            });
+        </script>
     </header>
 
 
@@ -92,7 +137,7 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                             <div class="item">
                                 <img src="/assets/images/professor-1.jpg" alt="">
-                                <h4>Name</h4>
+                                <h4>Trần Thanh Hà</h4>
                                 <p>Professor</p>
                                 <ul>
                                     <a href="">
@@ -109,8 +154,8 @@
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                             <div class="item">
-                                <img src="/assets/images/professor-1.jpg" alt="">
-                                <h4>Name</h4>
+                                <img src="/assets/images/professor-2.jpg" alt="">
+                                <h4>Võ Thành Hướng</h4>
                                 <p>Professor</p>
                                 <ul>
                                     <a href="">
@@ -127,8 +172,8 @@
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                             <div class="item">
-                                <img src="/assets/images/professor-1.jpg" alt="">
-                                <h4>Name</h4>
+                                <img src="/assets/images/professor-3.jpg" alt="">
+                                <h4>Phạm Thu Hương</h4>
                                 <p>Professor</p>
                                 <ul>
                                     <a href="">
@@ -145,8 +190,8 @@
                         </div>
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
                             <div class="item">
-                                <img src="/assets/images/professor-1.jpg" alt="">
-                                <h4>Name</h4>
+                                <img src="/assets/images/professor-4.jpg" alt="">
+                                <h4>Phạm Wang Khải</h4>
                                 <p>Professor</p>
                                 <ul>
                                     <a href="">
@@ -162,12 +207,62 @@
                             </div>
                         </div>
                     </div>
+                    <div class="more-info">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                <h3>10000+</h3>
+                                <h4>Khách hàng</h4>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                <h3>15+</h3>
+                                <h4>Năm kinh nghiệm</h4>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                                <h3>100+</h3>
+                                <h4>Nghiên cứu</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-three">
+            <div class="container-md">
+                <div class="inner-content">
+
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
+        <div class="inner-content">
+            <div class="container-md">
+                <h3>TỔ CHỨC SỨC KHOẺ & LÀM ĐẸP VIỆT NAM</h3>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <h4>THÔNG TIN LIÊN HỆ</h4>
+                        <p> <i class="fa-solid fa-location-dot"></i> Trụ sở Hà Nội: Yên Nghĩa, Hà Đông, Hà Nội</p>
+                        <p><i class="fa-solid fa-phone"></i> Hotline: 02499998888</p>
+                        <p><i class="fa-solid fa-envelope"></i> Email: beauty.work@beauty.com</p>
+                        <h4>THEO DÕI CHÚNG TÔI</h4>
+                        <div class="contact">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                        <h4>CƠ SỞ 1</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Trụ sở Hà Nội: Số XX, Yên Nghĩa, Hà Đông, Hà Nội</p>
+                        <p><i class="fa-solid fa-phone"></i> Hotline: 02499998888</p>
+                        <h4>CƠ SỞ 2</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Trụ sở Hà Nội: Số XX, Đường XX, Quận X, TP.HCM</p>
+                        <p><i class="fa-solid fa-phone"></i> Hotline: 02488889999</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 

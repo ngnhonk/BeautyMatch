@@ -1,24 +1,11 @@
 /* Header */
-
-/* header {
-    background-color: var(--color-background-one);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin: 0px;
-    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 20%);
-    z-index: 100;
-    background-color: #EFEFEF;
-} */
-
 header {
     background-color: transparent;
     position: fixed;
     top: 0;
     width: 100%;
     margin: 0;
-    
-    z-index: 100;
+    z-index: 1000;
     transition: background-color 0.6s ease;
 }
 
@@ -81,11 +68,51 @@ header .head-right p:hover {
     transition: 0.5s;
 }
 
-@media screen and (max-width : 991.98px) {
-    .head-mid {
+header .inner-header .hMenu {
+    display: none;
+    top: 100%;
+    width: 100%;
+    margin: auto;
+    z-index: 1000;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-white-hover);
+    border-radius: 8px;
+    position: absolute;
+    text-align: center;
+}
+
+header .inner-header .hMenu ul {
+    padding: 0;
+}
+
+header .inner-header .hMenu ul li {
+    padding: 1rem 0;
+    border-top: 1px solid lightgray;
+    margin: 0 40px;
+}
+
+header .inner-header .menu {
+    font-weight: 700;
+    font-size: 30px;
+    padding: 27.5px 0.5rem;
+    display: none;
+}
+
+@media (max-width : 1199.98px) {
+    header .inner-header .head-mid {
         display: none;
     }
+
+    header .inner-header .head-right {
+        display: none;
+    }
+
+    header .inner-header .menu {
+        display: block;
+    }
 }
+
+@media (max-width : 991.98px) {}
 
 /* End Header */
 
@@ -94,8 +121,8 @@ header .head-right p:hover {
     position: relative;
     padding-top: 80px;
     background-size: cover;
-    width: 1920px;
-    height: 910px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .section-one::before {
@@ -180,9 +207,10 @@ header .head-right p:hover {
 /* End Section One */
 
 /* Section Two */
-.section-two{
+.section-two {
     background-color: var(--color-primary);
 }
+
 .section-two .inner-content {
     padding: 6rem 0;
     padding-bottom: 9rem;
@@ -203,8 +231,12 @@ header .head-right p:hover {
     align-items: center;
 }
 
+.section-two .inner-content .row:first-of-type {
+    margin-bottom: 30px;
+}
+
 .section-two .inner-content .item h4 {
-    font-size: 24px;
+    font-size: 1.3rem;
     font-weight: 800;
     margin-bottom: 1px;
 }
@@ -212,6 +244,7 @@ header .head-right p:hover {
 .section-two .inner-content .item p {
     font-size: 0.9rem;
     margin-bottom: 20px;
+    color: var(--color-text);
 }
 
 .section-two .inner-content .item img {
@@ -238,4 +271,67 @@ header .head-right p:hover {
     background-color: var(--color-primary);
 }
 
+
+.section-two .more-info {
+    text-align: center;
+}
+
+.section-two .more-info h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: lightsalmon;
+    margin: 0;
+}
+
+.section-two .more-info h4 {
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+@media (max-width: 1199.98px) {
+    .section-two .inner-content .item {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .section-two .inner-content .item ul li {
+        padding: 1rem 4rem;
+    }
+}
+
 /* End Section Two */
+
+/* Section Three */
+
+/* End Section Three */
+
+/* Footer */
+footer{
+    padding: 3rem 0rem;
+    background-color: #2C3E50;
+}
+footer h3{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: white;
+}
+footer .row{
+    border-top: 1px solid white;   
+    padding: 1rem 0;
+    color: white; 
+    font-size: 1rem;
+}
+footer .row h4{
+    font-size: 1rem;
+    font-weight: 700;
+}
+footer .row .contact{
+    display: flex;
+    flex-direction: row;
+}
+footer .row .contact i{
+    padding-right: 0.8rem;
+    font-size: 1.5rem;
+}
+/* End Footer */
