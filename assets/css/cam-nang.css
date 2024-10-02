@@ -116,34 +116,164 @@ header .inner-header .menu {
 
 /* End Header */
 
+/* Section One */
+.section-one .inner-content {
+    padding: 10rem 0;
+    padding-bottom: 4rem;
+    color: var(--color-dark);
+}
+
+.section-one h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.section-one p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+}
+
+.section-one img {
+    object-fit: contain;
+    max-width: 80vw;
+}
+
+@media (max-width: 991.98px) {
+    .section-one h2 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .section-one p {
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+}
+
+@media(max-width: 767.98px){
+    .section-one .inner-content{
+        padding: 6rem 0;
+        padding-bottom: 2rem;
+    }
+}
+@media (max-width: 575.98px) {
+    .section-one .inner-content {
+        padding: 5rem 0;
+        color: var(--color-dark);
+    }
+}
+/* End Section One */
+
+/* Section Two */
+.section-two {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+    padding: 4rem 0;
+}
+
+.section-two ul {
+    margin: 0;
+    padding: 0;
+}
+.section-two .main-questions{
+    order: 0;
+}
+.section-two .main-questions ul li {
+    padding: 1rem 0;
+}
+
+.section-two .main-questions ul li h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.section-two .main-questions ul li p {
+    font-size: 0.9rem;
+}
+.section-two .list-questions{
+    order: 1;
+}
+.section-two .list-questions ul li {
+    font-weight: 700;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.section-two .list-questions ul li:hover{
+    color: var(--color-text);
+}
+.section-two .list-questions i {
+    font-size: 1.2rem;
+    align-items: center;
+    margin-right: 0.8rem;
+}
+@media(max-width: 767.98px){
+    .section-two{
+        padding: 2rem 0;
+    }
+}
+/* End Section Two */
 
 
 /* Footer */
-footer{
+footer {
     padding: 3rem 0rem;
     background-color: #2C3E50;
 }
-footer h3{
+
+footer h3 {
     font-size: 1.2rem;
     font-weight: 800;
     color: white;
 }
-footer .row{
-    border-top: 1px solid white;   
+
+footer .row {
+    border-top: 1px solid white;
     padding: 1rem 0;
-    color: white; 
+    color: white;
     font-size: 1rem;
 }
-footer .row h4{
+
+footer .row h4 {
     font-size: 1rem;
     font-weight: 700;
 }
-footer .row .contact{
+
+footer .row .contact {
     display: flex;
     flex-direction: row;
 }
-footer .row .contact i{
+
+footer .row .contact i {
     padding-right: 0.8rem;
     font-size: 1.5rem;
+}
+@media(max-width: 767.98px){
+    footer{
+        padding: 2.5rem;
+    }
+    footer h3{
+        font-size: 1rem;
+    }
+    footer h4{
+        font-size: 0.8rem;
+    }
+    footer p{
+        font-size: 0.6rem;
+    }
+}
+@media(max-width: 575.98px){
+    footer .row .contact{
+        margin-bottom: 1rem;
+    }
+    footer{
+        padding: 1rem;
+        padding-bottom: 0;
+    }
 }
 /* End Footer */
