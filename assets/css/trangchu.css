@@ -359,6 +359,35 @@ header .inner-header .menu {
     max-height: 30%;
     border-radius: 2rem;
 }
+.section-four .inner-content{
+    position: relative;
+}
+.section-four .img {
+    position: relative;
+    z-index: 1;
+}
+.section-four .details {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 1rem;
+    bottom: 7rem;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.section-four .inner-content p{
+    font-size: 0.8rem;
+    margin: 0;
+}
+.section-four .inner-content h4{
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin: 0;
+}
 /* End Section Four */
 
 /* Footer */
