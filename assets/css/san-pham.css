@@ -95,7 +95,6 @@ header .inner-header .menu {
     font-weight: 700;
     font-size: 30px;
     display: none;
-    display: block;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -103,6 +102,9 @@ header .inner-header .menu i{
     padding: 0;
 }
 @media (max-width : 1199.98px) {
+    header .inner-header .menu{
+        display: block;
+    }
     header .inner-header .head-mid {
         display: none;
     }
@@ -130,7 +132,74 @@ header .inner-header .menu i{
 }
 /* End Header */
 
+/* Section One */
+.section-one{
+    background-color: var(--color-primary);
+}
+.section-one .inner-content{
+    padding: 8rem 0;
+}
+.section-one .inner-content .danh-muc{
+    padding: 0.6rem;
+    border-radius: 0.8rem;
+    background-color: white;
+}
+.section-one .inner-content .danh-muc h2{
+    font-size: 1rem;
+    font-weight: 900;
+    margin-left: 0.6rem;
+    margin-top: 0.2rem;
+}
+.section-one .inner-content .danh-muc ul{
+    padding: 0;
+    margin: 0;
+}
+.section-one .inner-content .danh-muc ul li{
+    margin: 0;
+    padding: 0.6rem;
+    font-size: 0.7rem;
+    /* border: 1px solid lightgray; */
+    border-radius: 0.6rem;
+}
+.section-one .inner-content .danh-muc ul li:hover{
+    background-color: var(--color-primary);
+}
+.section-one .san-pham{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.8rem;
+}
+.section-one .san-pham .item{
+    border: 0.5px solid lightgray;
+    border-radius: 0.6rem;
+}
+.section-one .san-pham .item{
+    margin-bottom: 2rem;
+}
+.section-one .san-pham .item .img{
+    overflow: hidden;
+    object-fit: contain;
+}
+.section-one .san-pham .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+}
+.section-one .san-pham .item p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1rem;
+    margin-top: 2rem;
+}
+.section-one .san-pham .item .price{
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 1rem;
+    color: lightcoral;
+}
 
+/* End Section One */
 
 /* Footer */
 footer{

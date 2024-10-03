@@ -95,7 +95,6 @@ header .inner-header .menu {
     font-weight: 700;
     font-size: 30px;
     display: none;
-    display: block;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -103,6 +102,10 @@ header .inner-header .menu i{
     padding: 0;
 }
 @media (max-width : 1199.98px) {
+
+    header .inner-header .menu{
+        display: block;
+    }
     header .inner-header .head-mid {
         display: none;
     }
