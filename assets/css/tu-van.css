@@ -287,6 +287,97 @@ header .inner-header .menu i {
 }
 /* End Section Three */
 
+/* Section Four */
+.section-four{
+    background-color: var(--color-primary);
+}
+.section-four .inner-content{
+    padding: 2rem 0;
+}
+.section-four .plan{
+    min-height: 90vh;
+    border: 1px solid lightgray; 
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 0.5rem 1px rgba(0, 0, 0, 0.1);
+}
+.section-four .plan .top {
+    border-bottom: 0.5px solid lightgray;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.section-four .plan .top h3{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.section-four .plan .top .button{
+    display: inline-block;
+    padding: 0.5rem 1.3rem;
+    border-radius: 1.3rem;
+    margin-top: 0.5rem;
+    border: 1px solid gray;
+    color: rgb(1, 154, 250);
+    font-weight: 500;
+}
+.section-four .plan .top .button-default{
+    display: inline-block;
+    padding: 0.5rem 1.3rem;
+    border-radius: 1.3rem;
+    margin-top: 0.5rem;
+    border: 1px solid gray;
+    color:  var(--color-br-dark);
+    font-weight: 500;
+    background-color: var(--color-primary);
+}
+.section-four .plan .top .button:hover{
+    background-color: lightgray;
+    color: var(--color-dark);
+    transition: 0.5s;
+}
+.section-four .plan .top h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.section-four .plan .bottom{
+    padding: 1.5rem 0;
+}
+.section-four .plan .bottom i{
+    margin-right: 0.5rem;
+    color: rgb(59, 59, 248);
+}
+.section-four .plan .bottom p{
+    font-size: 0.9rem;
+}
+.section-four .rec{
+    position: relative;
+    border: 1px solid lightcoral;
+    box-shadow: 0 0 1rem 1px rgba(233, 179, 143, 0.637);
+}
+.section-four .plan .recommend{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(59, 59, 248);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+/* .section-four .color-silver{
+    color: var(--color-text);
+}
+.section-four .color-gold{
+    color: gold;
+}
+.section-four .color-plat{
+    color: rgb(61, 224, 224);
+}
+.section-four .color-than-thiet{
+
+} */
+/* End Section Four */
+
 /* Responsive */
 @media (max-width: 1199.98px) {
     .section-two .inner-content .item {

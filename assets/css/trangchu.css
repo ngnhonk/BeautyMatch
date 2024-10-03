@@ -265,7 +265,7 @@ header .inner-header .menu i{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit: contain;
+    object-fit: cover;
     margin-top: 30px;
     margin-bottom: 20px;
 }
