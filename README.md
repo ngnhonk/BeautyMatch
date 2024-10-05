@@ -40,3 +40,6 @@ Mức độ thực hiện:
 Lợi ích:
 - Ứng dụng không chỉ giúp người dùng có được những giải pháp làm đẹp phù hợp mà còn giúp họ tiết kiệm thời gian và tiền bạc khi chọn mua sản phẩm.
 - Khả năng cá nhân hóa và cập nhật liên tục theo nhu cầu của người dùng làm cho ứng dụng trở nên hữu ích và có tiềm năng phát triển cao trên thị trường.
+
+
+Mô hình nhận diện bệnh: https://drive.google.com/drive/folders/1dB92L5eBhKpIyIvyfsh5DOarD7p2TVGT?usp=sharing
