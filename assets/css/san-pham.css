@@ -98,13 +98,16 @@ header .inner-header .menu {
     margin-top: auto;
     margin-bottom: auto;
 }
-header .inner-header .menu i{
+
+header .inner-header .menu i {
     padding: 0;
 }
+
 @media (max-width : 1199.98px) {
-    header .inner-header .menu{
+    header .inner-header .menu {
         display: block;
     }
+
     header .inner-header .head-mid {
         display: none;
     }
@@ -113,7 +116,7 @@ header .inner-header .menu i{
         display: none;
     }
 
-    header .head-left img{
+    header .head-left img {
         margin: auto;
         width: 80%;
         height: auto;
@@ -121,15 +124,17 @@ header .inner-header .menu i{
     }
 }
 
-@media (max-width: 767.98px){
-    header .inner-header .menu{
+@media (max-width: 767.98px) {
+    header .inner-header .menu {
         font-size: 1.5rem;
     }
-    header .head-left img{
+
+    header .head-left img {
         width: 60%;
         padding: 1rem 0;
     }
 }
+
 /* End Header */
 
 /* Section One */
@@ -137,119 +142,200 @@ header .inner-header .menu i{
     background-color: var(--color-primary);
 }
 .section-one .inner-content{
-    padding: 8rem 0;
+    padding: 10rem;
+    padding-bottom: 6rem;
+    text-align: center;
 }
-.section-one .inner-content .danh-muc{
+.section-one .top h3{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.section-one .bottom img{
+    width: 15%;
+    overflow: hidden;
+    height: auto;
+}
+/* End Section One */
+
+/* Section Two */
+.section-two {
+    background-color: var(--color-dark);
+}
+
+.section-two .inner-content {
+    padding: 2rem 0;
+}
+
+.section-two .search-bar{
+    background-color: white;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
+.section-two .search-bar .inner-search-bar{
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+}
+.section-two .search-bar input{
+    width: 90%;
+    border: none;
+    border-right: 0.5px solid gray;
+    outline:none;
+    padding: 0.25rem;
+}
+.section-two .search-bar button{
+    /* margin-left: 0.5rem; */
+    width: 9%;
+    padding: 0.25rem;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+}
+.section-two .search-bar button:hover{
+    color: rgb(55, 55, 219);
+}
+.section-two .inner-content .danh-muc {
     padding: 0.6rem;
     border-radius: 0.8rem;
     background-color: white;
 }
-.section-one .inner-content .danh-muc h2{
+
+.section-two .inner-content .danh-muc h2 {
     font-size: 1rem;
     font-weight: 900;
     margin-left: 0.6rem;
     margin-top: 0.2rem;
 }
-.section-one .inner-content .danh-muc ul{
+
+.section-two .inner-content .danh-muc ul {
     padding: 0;
     margin: 0;
 }
-.section-one .inner-content .danh-muc ul li{
+
+.section-two .inner-content .danh-muc ul li {
     margin: 0;
     padding: 0.6rem;
     font-size: 0.7rem;
     /* border: 1px solid lightgray; */
     border-radius: 0.6rem;
 }
-.section-one .inner-content .danh-muc ul li:hover{
+
+.section-two .inner-content .danh-muc ul li:hover {
     background-color: var(--color-primary);
 }
-.section-one .san-pham{
+
+.section-two .san-pham {
     background-color: white;
     padding: 2rem;
     border-radius: 0.8rem;
 }
-.section-one .san-pham .item{
+
+.section-two .san-pham .item {
     border: 0.5px solid lightgray;
     border-radius: 0.6rem;
 }
-.section-one .san-pham .item{
+
+.section-two .san-pham .item {
     margin-bottom: 2rem;
+    min-height: 22rem;
 }
-.section-one .san-pham .item .img{
+
+.section-two .san-pham .item .img {
     overflow: hidden;
     object-fit: contain;
+    min-height: 60%;
+    width: 100%;
 }
-.section-one .san-pham .item img{
+
+.section-two .san-pham .item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 0.6rem;
+    min-height: 100%;
+    object-fit: contain;
+    border-radius: 0.6rem 0.6rem 0 0;
 }
-.section-one .san-pham .item p{
+
+.section-two .san-pham .item p {
     font-size: 1.1rem;
     font-weight: 600;
     margin: 1rem;
     margin-top: 2rem;
 }
-.section-one .san-pham .item .price{
+
+.section-two .san-pham .item .price {
     font-size: 1rem;
     font-weight: 800;
     margin: 1rem;
     color: lightcoral;
 }
 
-/* End Section One */
+/* End Section Two */
 
 /* Footer */
-footer{
+footer {
     padding: 3rem 0rem;
     background-color: #2C3E50;
 }
-footer h3{
+
+footer h3 {
     font-size: 1.2rem;
     font-weight: 800;
     color: white;
 }
-footer .row{
-    border-top: 1px solid white;   
+
+footer .row {
+    border-top: 1px solid white;
     padding: 1rem 0;
-    color: white; 
+    color: white;
     font-size: 1rem;
 }
-footer .row h4{
+
+footer .row h4 {
     font-size: 1rem;
     font-weight: 700;
 }
-footer .row .contact{
+
+footer .row .contact {
     display: flex;
     flex-direction: row;
 }
-footer .row .contact i{
+
+footer .row .contact i {
     padding-right: 0.8rem;
     font-size: 1.5rem;
 }
-@media(max-width: 767.98px){
-    footer{
+
+@media(max-width: 767.98px) {
+    footer {
         padding: 2.5rem;
     }
-    footer h3{
+
+    footer h3 {
         font-size: 1rem;
     }
-    footer h4{
+
+    footer h4 {
         font-size: 0.8rem;
     }
-    footer p{
+
+    footer p {
         font-size: 0.6rem;
     }
 }
-@media(max-width: 575.98px){
-    footer .row .contact{
+
+@media(max-width: 575.98px) {
+    footer .row .contact {
         margin-bottom: 1rem;
     }
-    footer{
+
+    footer {
         padding: 1rem;
         padding-bottom: 0;
     }
 }
+
 /* End Footer */
