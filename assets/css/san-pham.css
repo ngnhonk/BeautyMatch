@@ -41,7 +41,6 @@ header .head-mid ul {
 }
 
 header .head-mid ul li:hover {
-    /* font-weight: 600; */
     color: var(--color-text);
     transition: 0.2s;
 }
@@ -139,66 +138,73 @@ header .inner-header .menu i {
 /* End Header */
 
 /* Section One */
-.section-one{
+.section-one {
     background-color: var(--color-primary);
 }
-.section-one .inner-content{
+
+.section-one .inner-content {
     padding: 10rem;
     padding-bottom: 6rem;
     text-align: center;
 }
-.section-one .top h3{
+
+.section-one .top h3 {
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
 }
 
-.section-one .bottom img{
+.section-one .bottom img {
     width: 15%;
     overflow: hidden;
     height: auto;
 }
+
 /* End Section One */
 
 /* Section Two */
 .section-two {
-    background-color: var(--color-dark);
+    background-color: var(--color-br-dark);
 }
 
 .section-two .inner-content {
     padding: 2rem 0;
 }
 
-.section-two .search-bar{
+.section-two .search-bar {
     background-color: white;
     margin-bottom: 1.5rem;
     padding: 1rem;
     border-radius: 0.8rem;
 }
-.section-two .search-bar .inner-search-bar{
+
+.section-two .search-bar .inner-search-bar {
     width: 100%;
     border: 1px solid gray;
     border-radius: 0.5rem;
     padding: 0.25rem;
 }
-.section-two .search-bar input{
+
+.section-two .search-bar input {
     width: 90%;
     border: none;
     border-right: 0.5px solid gray;
-    outline:none;
+    outline: none;
     padding: 0.25rem;
 }
-.section-two .search-bar button{
-    /* margin-left: 0.5rem; */
+
+.section-two .search-bar button {
     width: 9%;
     padding: 0.25rem;
     background-color: transparent;
     border: none;
     font-weight: 600;
 }
-.section-two .search-bar button:hover{
+
+.section-two .search-bar button:hover {
     color: rgb(55, 55, 219);
 }
+
 .section-two .inner-content .danh-muc {
     padding: 0.6rem;
     border-radius: 0.8rem;
@@ -221,7 +227,6 @@ header .inner-header .menu i {
     margin: 0;
     padding: 0.6rem;
     font-size: 0.7rem;
-    /* border: 1px solid lightgray; */
     border-radius: 0.6rem;
 }
 
@@ -275,6 +280,85 @@ header .inner-header .menu i {
 }
 
 /* End Section Two */
+
+/* Section Three */
+.section-three .inner-content {
+    padding: 4rem 0;
+}
+
+.section-three .slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.section-three .slides {
+    display: none;
+}
+
+.section-three .fade {
+    animation-name: fade;
+    animation-duration: 5s;
+}
+.section-three .fade img{
+    max-height: 40rem;
+    object-fit: cover;
+}
+
+@keyframes fade {
+    from {
+        opacity: .7
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Next & previous buttons */
+.section-three .prev,
+.section-three .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.section-three .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.section-three .prev:hover,
+.section-three .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dot indicators */
+.section-three .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.section-three .active,
+.section-three .dot:hover {
+    background-color: #717171;
+}
+
+/* End Section Three */
 
 /* Footer */
 footer {

@@ -225,6 +225,94 @@
                 </div>
             </div>
         </div>
+        <div class="section-three">
+            <div class="container-xl">
+                <div class="inner-content">
+                    <div class="slideshow-container">
+
+                        <div class="slides fade">
+                            <img src="/assets/images/day1.png" style="width:100%">
+                        </div>
+                        <div class="slides fade">
+                            <img src="/assets/images/day2.jpg" style="width:100%">
+                        </div>
+                        <div class="slides fade">
+                            <img src="/assets/images/day3.jpg" style="width:100%">
+                        </div>
+                        <div class="slides fade">
+                            <img src="/assets/images/day4.jpg" style="width:100%">
+                        </div>
+                        <div class="slides fade">
+                            <img src="/assets/images/day5.jpg" style="width:100%">
+                        </div>
+                        <div class="slides fade">
+                            <img src="/assets/images/day6.png" style="width:100%">
+                        </div>
+                        <div class="slides fade">
+                            <img src="/assets/images/day7.png" style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                    </div>
+
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="setSlide(1)"></span>
+                        <span class="dot" onclick="setSlide(2)"></span>
+                        <span class="dot" onclick="setSlide(3)"></span>
+                        <span class="dot" onclick="setSlide(4)"></span>
+                        <span class="dot" onclick="setSlide(5)"></span>
+                        <span class="dot" onclick="setSlide(6)"></span>
+                        <span class="dot" onclick="setSlide(7)"></span>
+                    </div>
+
+
+                </div>
+            </div>
+            <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+
+                function changeSlide(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function setSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    let slides = document.getElementsByClassName("slides");
+                    let dots = document.getElementsByClassName("dot");
+
+                    if (n > slides.length) {
+                        slideIndex = 1;
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length;
+                    }
+
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+
+                    for (let i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+
+                setInterval(function () {
+                    changeSlide(1);
+                }, 5000); // ms
+            </script>
+
+        </div>
+
     </main>
 
     <footer>
