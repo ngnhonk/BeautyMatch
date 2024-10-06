@@ -220,6 +220,7 @@ header .inner-header .menu i{
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 .section-two .list-questions ul li:hover{
     color: var(--color-text);
