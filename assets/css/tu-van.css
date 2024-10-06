@@ -160,7 +160,14 @@ header .inner-header .menu i {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
+.section-two .inner-content .last-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20rem;
+} 
 
 .section-two .inner-content .row:first-of-type {
     margin-bottom: 30px;
@@ -182,7 +189,7 @@ header .inner-header .menu i {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit: contain;
+    object-fit: cover;
     margin-top: 30px;
     margin-bottom: 20px;
 }
