@@ -64,7 +64,7 @@
             </div>
 
             <div class="head-right">
-                <a href="">
+                <a href="/tai-khoan/">
                     <p>Tài khoản</p>
                 </a>
             </div>
@@ -120,16 +120,57 @@
                         và đóng vai trò điều hòa thân nhiệt. Uống đủ nước là cách tự nhiên nhất để có được làn da rạng
                         rỡ, sáng và khỏe mạnh.</p>
                 </div>
-            </div>
+            </div>s
         </div>
 
         <div class="section-two">
             <div class="container-md">
                 <div class="inner-content">
+
                     
+                    <h2>Chuẩn đoán vấn đề da của bạn</h2>
+                    <form method="POST" enctype="multipart/form-data" action="/upload">
+                        <div class="form-group">
+                            <label for="file">Tải lên ảnh của bạn:</label>
+                            <input type="file" name="file" id="file" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Dự đoán</button>
+                    </form>
+                    <div id="result" class="mt-5">
+                        <!-- Kết quả dự đoán sẽ được hiển thị ở đây -->
+                    </div>
                 </div>
             </div>
-        </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const form = document.querySelector('form');
+                    const resultDiv = document.getElementById('result');
+
+                    form.addEventListener('submit', function (e) {
+                        e.preventDefault();
+
+                        const formData = new FormData(form);
+
+                        fetch('/upload', {
+                                method: 'POST',
+                                body: formData
+                            })
+                            .then(response => response.json())
+                            .then(data => {
+                                if (data.error) {
+                                    resultDiv.innerHTML =
+                                        `<p class="text-danger">${data.error}</p>`;
+                                } else {
+                                    resultDiv.innerHTML =
+                                        `<p class="text-success">Dự đoán: ${data.disease}</p>`;
+                                }
+                            })
+                            .catch(error => {
+                                resultDiv.innerHTML = `<p class="text-danger">Có lỗi xảy ra</p>`;
+                            });
+                    });
+                });
+            </script>
     </main>
 
     <footer>

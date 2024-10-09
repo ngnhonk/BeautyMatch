@@ -235,6 +235,9 @@ header .inner-header .menu i{
         padding: 2rem 0;
     }
 }
+#one, #tw, #three, #four, #five, #six, #seven{
+    scroll-margin-top: 5rem;
+}
 /* End Section Two */
 
 
