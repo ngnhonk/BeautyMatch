@@ -248,7 +248,6 @@ header .inner-header .menu i {
 
 .section-two button.btn:hover {
     background-color: transparent;
-    color: white;
 }
 
 .section-two #result {
@@ -286,6 +285,10 @@ header .inner-header .menu i {
     color: #2C3E50;
     max-width: 40%;
     margin: 20px auto 0 auto;
+}
+.section-three .btn:hover{
+    background-color: transparent;
+    color: black;
 }
 
 /* End Section Two */
