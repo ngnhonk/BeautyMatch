@@ -187,8 +187,7 @@ header .inner-header .menu i {
 }
 
 .section-two {
-    background-color: #f7f7f7;
-    /* Màu nền nhẹ nhàng */
+    background-color: var(--color-br-dark);
     padding: 60px 0;
     /* Tạo khoảng trống phía trên và dưới */
 }
@@ -196,9 +195,14 @@ header .inner-header .menu i {
 .section-two h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.section-two .inner-content {
+    border-radius: 0.5rem;
+    background-color: white;
+    margin: 4rem 0;
 }
 
 .section-two form {
@@ -230,24 +234,58 @@ header .inner-header .menu i {
 }
 
 .section-two button.btn {
-    font-size: 1.2rem;
-    padding: 1rem 3rem;
-    border-radius: 8px;
-    background-color: #007bff;
-    color: white;
-    transition: background-color 0.3s ease;
-    max-width: 30%;
+    padding: 0.75rem 3rem;
+    background-color: #ff9fd4;
+    border: 1px solid #ff9fd4;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2C3E50;
+    max-width: 40%;
     margin: auto;
 }
 
 .section-two button.btn:hover {
-    background-color: #0056b3;
+    background-color: transparent;
+    color: white;
 }
 
 .section-two #result {
     text-align: center;
     font-size: 1.2rem;
     color: #333;
+}
+
+/* End Section Two */
+/* Section Three */
+.section-three {
+    background-color: #f7f7f7;
+}
+
+.section-three .inner-content {
+    padding: 8rem
+}
+
+.section-three h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.section-three .btn {
+    display: block;
+    padding: 0.75rem 3rem;
+    background-color: #ff9fd4;
+    border: 1px solid #ff9fd4;
+    border-radius: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2C3E50;
+    max-width: 40%;
+    margin: 20px auto 0 auto;
 }
 
 /* End Section Two */

@@ -120,14 +120,12 @@
                         và đóng vai trò điều hòa thân nhiệt. Uống đủ nước là cách tự nhiên nhất để có được làn da rạng
                         rỡ, sáng và khỏe mạnh.</p>
                 </div>
-            </div>s
+            </div>
         </div>
 
         <div class="section-two">
             <div class="container-md">
                 <div class="inner-content">
-
-                    
                     <h2>Chuẩn đoán vấn đề da của bạn</h2>
                     <form method="POST" enctype="multipart/form-data" action="/upload">
                         <div class="form-group">
@@ -140,6 +138,7 @@
                         <!-- Kết quả dự đoán sẽ được hiển thị ở đây -->
                     </div>
                 </div>
+
             </div>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
@@ -171,6 +170,49 @@
                     });
                 });
             </script>
+        </div>
+        <div class="section-three">
+            <div class="container-md">
+                <div class="inner-content">
+                    <h2>Khảo sát về tình trạng da</h2>
+                    <form method="POST" action="/submit-survey">
+                        <div class="form-group">
+                            <label for="age">Tuổi của bạn:</label>
+                            <input type="number" name="age" id="age" class="form-control" required>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="skin-type">Loại da của bạn:</label>
+                            <select name="skin-type" id="skin-type" class="form-control" required>
+                                <option value="">Chọn loại da</option>
+                                <option value="normal">Da thường</option>
+                                <option value="oily">Da dầu</option>
+                                <option value="dry">Da khô</option>
+                                <option value="combination">Da hỗn hợp</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="concern">Bạn đang lo lắng về vấn đề da nào nhất?</label>
+                            <select name="concern" id="concern" class="form-control" required>
+                                <option value="">Chọn vấn đề da</option>
+                                <option value="acne">Mụn</option>
+                                <option value="wrinkles">Nếp nhăn</option>
+                                <option value="dark-spots">Tàn nhang / Đốm nâu</option>
+                                <option value="sensitivity">Da nhạy cảm</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <label for="feedback">Mô tả thêm:</label>
+                            <textarea name="feedback" id="feedback" class="form-control" rows="4"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary mt-3">Gửi khảo sát</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
